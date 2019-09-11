@@ -1,46 +1,77 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="main.css">
 
-<body class="text-left" style="background-color:#202020;color:#e9e9e9;font-size:13pt;font-weight:300; font-family:'Noto Sans KR',sans-serif;">
-  <div class="container-fluid" style="padding: 3rem 25%;">
-    <h1 class="mb-1" style="font-family:'Titillium Web'; font-weight:600; font-size:30pt;">Matis Luzi</h1>
-    <p class="mb-1" style="font-size:15pt;">
+<body class="text-left dark" id="body" style="font-size:13pt;font-weight:300; font-family:'Noto Sans KR',sans-serif;">
+  <div class="container-fluid container-main" style="">
+    <div class="d-flex flex-row align-items-center justify-content-between">
+      <div class="d-flex ">
+        <h1 class="mb-1 text-main text-main-darkmode" style="font-family:'Titillium Web'; font-weight:600; font-size:30pt;">Matis Luzi</h1>
+      </div>
+      <div class="d-flex">
+        <button id=darkmode class='btn btn-sm btn-primary'>Light Mode</button>
+      </div>
+    </div>
+    <p class="mb-1 text-main text-main-darkmode" style="font-size:15pt;">
       United World College in Mostar, 2019-2021
     </p>
-    <p class="" style="margin-left:1px;font-size: 13pt; font-family:'Hepta Slab';">matisluzi@gmail.com</p>
-    <hr class="border border-light" style="width:100%;" />
-    <p class="" style="">
-      <a style="font-weight:700;font-size:14pt;">Interests:</a>
-      <a style="">Computer Science, Web Development, Computer Building, Mathematics, Physics, Piano, Tennis, Football (soccer)</a>
+    <p class=" text-main text-main-darkmode" style="margin-left:1px;font-size: 13pt; font-family:'Hepta Slab';">matisluzi@gmail.com</p>
+    <hr class="border border-light" id="sep1" style="width:100%;" />
+    <p class=" text-main text-main-darkmode" style="">
+      <a class=" text-main text-main-darkmode" style="font-weight:700;font-size:14pt;">Interests:</a>
+      <a class=" text-main text-main-darkmode" style="">Computer Science, Web Development, Computer Building, Mathematics, Physics, Piano, Tennis, Football (soccer)</a>
     </p>
-    <p class="mb-2 pt-2" style="font-weight:700;font-size:14pt;">Certificates:</p>
+    <p class="mb-2 pt-2 text-main text-main-darkmode" style="font-weight:700;font-size:14pt;">Certificates:</p>
     <ul class="">
-      <li style="padding-left:1rem;">
-        <a href='assets/gt_cert.pdf' style='color:#ffe981;'>GiftedAndTalented.com - Beginning Algebra</a>
+      <li class="text-main text-main-darkmode" style="padding-left:1rem;">
+        <a class=" text-alt text-alt-darkmode" href='assets/gt_cert.pdf' style=''>GiftedAndTalented.com - Beginning Algebra</a>
         <p style="margin-bottom:0.7rem;">November 17, 2016</p>
       </li>
-      <li style="padding-left:1rem;">
-        <a href='assets/german_a1_1.pdf' style='color:#ffe981;'>Goethe Institut - German Language, Level A1.1</a>
+      <li class="text-main text-main-darkmode" style="padding-left:1rem;">
+        <a class=" text-alt text-alt-darkmode" href='assets/german_a1_1.pdf' style=''>Goethe Institut - German Language, Level A1.1</a>
         <p style="margin-bottom:0.7rem;">March 24, 2015</p>
       </li>
-      <li style="padding-left:1rem;">
-        <a href='assets/german_a1_2.pdf' style='color:#ffe981;'>Goethe Institut - German Language, Level A1.2</a>
+      <li class="text-main text-main-darkmode" style="padding-left:1rem;">
+        <a class=" text-alt text-alt-darkmode" href='assets/german_a1_2.pdf' style=''>Goethe Institut - German Language, Level A1.2</a>
         <p style="margin-bottom:0.7rem;">June 22, 2015</p>
       </li>
-      <li style="padding-left:1rem;">
-        <a href='assets/german_a1_austria.pdf' style='color:#ffe981;'>young austria - German Language, Level A1</a>
+      <li class="text-main text-main-darkmode" style="padding-left:1rem;">
+        <a class=" text-alt text-alt-darkmode" href='assets/german_a1_austria.pdf' style=''>young austria - German Language, Level A1</a>
         <p style="margin-bottom:0.7rem;">August 9, 2018</p>
       </li>
-      <li style="padding-left:1rem;">
-        <a href='assets/tech_club.pdf' style='color:#ffe981;'>Summer Technology Club, U.S. Embassy Tirana</a>
-        <p>
-          July 29, 2014
-        </p>
+      <li class="text-main text-main-darkmode" style="padding-left:1rem;">
+        <a class="text-alt text-alt-darkmode" href='assets/tech_club.pdf' style=''>Summer Technology Club, U.S. Embassy Tirana</a>
+        <p>July 29, 2014</p>
       </li>
     </ul>
     </p>
   </div>
 </body>
+
+<script type="text/javascript">
+  document.getElementById('darkmode').onclick = function() {
+    document.getElementById('body').classList.toggle('dark');
+    document.getElementById('body').classList.toggle('light');
+    var textmain = document.getElementsByClassName('text-main');
+    for (var i = 0; i < textmain.length; i++) {
+      textmain[i].classList.toggle('text-main-lightmode');
+      textmain[i].classList.toggle('text-main-darkmode');
+    }
+    var textalt = document.getElementsByClassName('text-alt');
+    for (var i = 0; i < textalt.length; i++) {
+      textalt[i].classList.toggle('text-alt-lightmode');
+      textalt[i].classList.toggle('text-alt-darkmode');
+    }
+    document.getElementById("sep1").classList.toggle('border-light');
+    document.getElementById("sep1").classList.toggle('border-dark');
+    if (document.getElementById('darkmode').innerHTML == "Light Mode") {
+      document.getElementById('darkmode').innerHTML = "Dark Mode";
+    } else {
+      document.getElementById('darkmode').innerHTML = "Light Mode"
+    }
+  }
+</script>

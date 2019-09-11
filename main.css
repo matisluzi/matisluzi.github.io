@@ -1,0 +1,51 @@
+.container-main {
+  padding: 1rem 10%;
+}
+
+.dark {
+  background-color: #202020;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.light {
+  background-color: #e7e7e7;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+  transition: background-color 100ms linear;
+}
+
+.text-main-darkmode {
+  color: #e9e9e9;
+}
+
+.text-main-lightmode {
+  color: #222222;
+}
+
+.text-alt {}
+
+.text-alt-darkmode {
+  color: #ffe981;
+}
+
+.text-alt-lightmode {
+  color: #77000e;
+}
+
+@media (min-width: 576px) {
+  .container-main {
+    padding: 2rem 15%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-main {
+    padding: 3rem 20%;
+  }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
