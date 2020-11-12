@@ -30,7 +30,15 @@
   color: #ffe981;
 }
 
+.text-main-darkmode a:hover {
+  color: #ffe981;
+}
+
 .text-alt-lightmode {
+  color: #77000e;
+}
+
+.text-main-lightmode a:hover {
   color: #77000e;
 }
 
